@@ -6,7 +6,7 @@
 
 **About me:** A beginner developer with a great desire to become a professional in web development :)
 
-**Skills:** HTML, CSS, some JS, Git
+**Skills:** HTML, CSS, some JS, Git, VScode
 
 _This is my solution of kata [Who's Online?](https://www.codewars.com/kata/5b6375f707a2664ada00002a) on Codewars:_
 
