@@ -8,13 +8,24 @@
 
 **Skills:** HTML, CSS, some JS, Git
 
-_This is my solution of kata [Dubstep](https://www.codewars.com/kata/551dc350bf4e526099000ae5) on Codewars:_
+_This is my solution of kata [Who's Online?](https://www.codewars.com/kata/5b6375f707a2664ada00002a) on Codewars:_
 
 ```javascript
-function songDecoder(song){
-  let original = song.replace(/WUB/g, ' ').trim();
-  original = original.replace(/ +/g, ' ');
-  return original;
+const whosOnline = (friends) => {
+  let online = [];
+  let offline = [];
+  let away = [];
+  
+  friends.map(e => e.status === 'online' && e.lastActivity < 11 ? online.push(e.username) :
+              e.status === 'offline' ? offline.push(e.username) : away.push(e.username));
+              
+  
+  if (online.length > 0 && offline.length > 0 && away.length > 0) return {online, offline, away};
+  if (online.length > 0 && offline.length > 0) return {online, offline};
+  if (online.length > 0 && away.length > 0) return {online, away};
+  if (offline.length > 0 && away.length > 0) return {offline, away};
+  return {}
+  
 }
 ```
 
