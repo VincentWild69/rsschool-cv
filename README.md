@@ -1,2 +1,2 @@
 # rsschool-cv
-rrrrssss
+https://vincentwild69.github.io/rsschool-cv/cv
