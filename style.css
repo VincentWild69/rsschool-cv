@@ -1,0 +1,372 @@
+/*Default styles begin*/
+*, 
+*::before, 
+*::after {
+    box-sizing: border-box;
+}
+
+html {
+  font-family: 'Work Sans', sans-serif;
+  font-size: 62.5%;
+}
+
+@media screen and (max-width: 767px) {
+  html {
+      font-size: 50%;
+  }
+}
+
+body {
+  margin: 0;
+  background-color: #ffedcb;
+  font-size: 1.6rem;
+}
+
+h1, h2, h3, h4, p {
+  margin: 0;
+}
+
+input, button, textarea, select {
+  font: inherit;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  border: none;
+  outline:none;
+  cursor:pointer;
+}
+
+img {
+  display: block;
+}
+/*Default styles end*/
+
+.container {
+  width: 1366px;
+  margin: 0 auto;
+}
+
+@media screen and (max-width:1500px) {
+  .container {
+      width: 1240px;
+  }
+}
+
+@media screen and (max-width: 1340px) {
+  .container {
+      width: 1100px;
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .container {
+    width: 100%;
+  }
+}
+
+/*HEADER START*/
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: #ffffff;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+  margin: 0 1rem 1rem 1rem;
+}
+
+@media screen and (max-width: 900px) {
+  header {
+      padding-right: 20px;
+      padding-left: 20px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  header {
+      flex-wrap: wrap;
+  }
+}
+
+h1 {
+  position: relative;
+  margin-bottom: 3.5rem;
+  font-size: 4.5rem;
+  color: #141814;
+}
+
+h1::after {
+  content: '';
+  position: absolute;
+  width: 9rem;
+  height: 0.5rem;
+  top: 120%;
+  left: 39%;
+  background-color: #f7a23b;
+}
+
+.header__info {
+  text-align: center;
+}
+
+.title-name {
+  font-size: 2rem;
+}
+
+.avatar {
+  margin: 20px;
+  width: 26rem;
+}
+
+.avatar__img {
+  max-width: 100%;
+  max-height: 100%;
+  border-radius: 2%;
+  border: solid 5px #e4a144;
+}
+/*HEADER END*/
+
+.main-block {
+  margin: 0 1rem 1rem 1rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+/*ASIDE START*/
+aside {
+  width: 29%;
+  height: 100%;
+  background-color: rgb(248, 180, 125);
+}
+
+main {
+  padding: 1.5rem;
+  width: 70%;
+  background-color: #fff;
+}
+
+.education {
+  padding: 1.5rem 1.5rem 1.5rem 2.7rem;
+}
+
+.contact {
+  padding: 1.5rem 1.5rem 1.5rem 2.7rem;
+  background-color: #faf6eb;
+}
+
+aside h2 {
+  position: relative;
+  margin-bottom: 4rem;
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+aside h2::after {
+  content: '';
+  position: absolute;
+  width: 4rem;
+  height: 0.2rem;
+  top: 145%;
+  left: 0%;
+  background-color: #000000;
+}
+
+.education-item {
+  margin: 2rem 0 2rem 0;
+}
+
+.education-year {
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+
+.education-institution {
+  font-size: 1.7rem;
+  font-weight: 500;
+}
+
+.education-proffesion {
+  font-size: 1.5rem;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.contact-info a {
+  color: #ca5e05;
+}
+
+.contact-item {
+  margin: 2rem 0 2rem 0;
+  font-size: 1.7rem;
+  font-weight: 500;
+}
+
+.contact-detail {
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+
+.edu-margin {
+  margin-bottom: 0.3rem;
+}
+/*ASIDE END*/
+
+/*MAIN BLOCK START*/
+main section {
+  margin: 0 1rem 3rem 1rem;
+}
+
+main h2 {
+  position: relative;
+  margin-bottom: 4rem;
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+
+main h2::after {
+  content: '';
+  position: absolute;
+  width: 7rem;
+  height: 0.4rem;
+  top: 145%;
+  left: 0%;
+  background-color: #f7a23b;
+}
+
+.bio-p {
+  font-size: 1.8rem;
+  line-height: 2.3rem;
+}
+
+.skill-list {
+  padding: 0;
+}
+.skill-item {
+  list-style: circle inside;
+  margin-bottom: 1rem;
+}
+
+.skill-item-name {
+  font-size: 1.6rem;
+  font-weight: 500;
+  text-decoration: underline #ff9900;
+}
+
+.skill-item ul {
+  margin-top: 1rem;
+}
+
+.skill-item-techno {
+  list-style: square inside;
+  margin-bottom: 1rem;
+}
+
+.skill-item-name-techno {
+  font-size: 1.6rem;
+  font-weight: 500;
+  font-style: italic;
+}
+
+h3 {
+  font-size: 1.8rem;
+  font-weight: 600;
+  font-style: italic;
+  margin-bottom: 2rem;
+}
+
+.example p {
+  margin-bottom: 1rem;
+}
+
+.example pre {
+  white-space: pre-line;
+  background-color: #f3f1ec;
+  padding-left: 2rem;
+  border-radius: 1%;
+  max-width: 50rem;
+}
+
+.example code {
+  font-size: 1.4rem;
+}
+/*MAIN BLOCK END*/
+
+/*FOOTER START*/
+footer {
+  margin: 0 1rem 1rem 1rem;
+  background-color: #f0e9d6;
+  display: flex;
+  align-content: center;
+  justify-content: space-between;
+}
+
+.links {
+  display: flex;
+  align-content: center;
+  justify-content: flex-start;
+}
+
+.links a {
+  color: #000;
+}
+
+.git {
+  margin: 1rem 3rem 1rem 10rem;
+  padding: 0.5rem;
+  border-radius: 10%;
+  transition: 0.7s ease;
+}
+
+.git:hover {
+  background-color: #f0a466;
+  transition: 0.7s ease;
+}
+
+.git p {
+  margin-bottom: 0.5rem;
+  font-size: 1.3rem;
+  font-weight: 500;
+}
+
+.git-footer-icon {
+  width: 3rem;
+  height: 3rem;
+}
+
+.rss {
+  margin: 1rem 3rem 1rem 3rem;
+  padding: 0.5rem;
+  border-radius: 10%;
+  transition: 0.7s ease;
+}
+
+.rss:hover {
+  background-color: #f0a466;
+  transition: 0.7s ease;
+}
+
+.rss p {
+  margin-bottom: 0.5rem;
+  font-size: 1.3rem;
+  font-weight: 500;
+}
+
+.rss-footer-icon {
+  width: 6rem;
+  height: 3.5rem;
+}
+
+.year {
+  margin: 3.5rem 15rem 2rem 3rem;
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+/*FOOTER END*/

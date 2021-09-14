@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css"> 
+  <title>CV for RS-school</title>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="avatar">
+        <img class="avatar__img" src="avatar1.jpg" alt="this is avatar">
+      </div>
+      <div class="header__info">
+        <h1>Alexey Kuzniecov</h1>
+        <p class="title-name">Web developer</p>
+      </div>
+    </header>
+  </div>
+  <div class="container">
+    <div class="main-block">
+      <aside>
+        <section class="education">
+          <h2>Education</h2>
+          <div class="education-info">
+            <div class="education-item">
+              <p class="education-year edu-margin">
+                2007-2012
+              </p>
+              <p class="education-institution edu-margin">
+                Kyiv Natonal Economic University
+              </p>
+              <p class="education-proffesion edu-margin">
+                Management of industrial enterprises
+              </p>
+            </div>
+            <div class="education-item">
+              <p class="education-year edu-margin">
+                2015
+              </p>
+              <p class="education-institution edu-margin">
+                Skill up factory
+              </p>
+              <p class="education-proffesion edu-margin">
+                Basic HTML, CSS, SQL
+              </p>
+            </div>
+            <div class="education-item">
+              <p class="education-year edu-margin">
+                2021
+              </p>
+              <p class="education-institution edu-margin">
+                Code-basics.com
+              </p>
+              <p class="education-proffesion edu-margin">
+                Html&CSS course, Basic Javascript course
+              </p>
+            </div>
+          </div>
+        </section>
+        <section class="contact">
+          <h2>Contact</h2>
+          <div class="contact-info">
+            <p class="contact-item">
+              Web: <a class="contact-a" href="http://vincent.pp.ua"><span class="contact-detail">vincent.pp.ua</span></a>
+            </p>
+            <p class="contact-item">
+              Email: <span class="contact-detail">alexeyk90@gmail.com</span>
+            </p>
+            <p class="contact-item">
+              Telegram: <a class="contact-a" href="https://t.me/VincentGreen"><span class="contact-detail">@VincentGreen</span></a>
+            </p>
+            <p class="contact-item">
+              Area: <span class="contact-detail">Ukraine</span>
+            </p>
+          </div>
+        </section>
+      </aside>
+      <main>
+        <section class="bio">
+          <h2>Shortly about myself</h2>
+          <p class="bio-p">Hello! My name is Alexey, I live in a small town in Ukraine, I am 31 years old. Due to the lack of job offers in my city, I want to study the profession of a web developer in order to be able to work remotely. I have always been fascinated by the "magic" of talking with a machine, when you can learn languages that allow you to do some cool things using a computer and a well-written program. Now I am at the beginning of the road, but I hope to become a professional in web development in the near future, I am ready to put a lot of effort into this. </p>
+        </section>
+        <section class="skill">
+          <h2>My skills</h2>
+          <div class="skill-container">
+            <ul class="skill-list">
+              <li class="skill-item">
+                <span class="skill-item-name">English proficiency:</span>
+                <span class="skill-item-description">A2</span>
+              </li>
+              <li class="skill-item"> 
+                <span class="skill-item-name">Technology:</span>
+                <ul>
+                  <li class="skill-item-techno">
+                    <span class="skill-item-name-techno">HTML:</span>
+                    <span class="skill-item-description">confident</span>
+                  </li>
+                  <li class="skill-item-techno">
+                    <span class="skill-item-name-techno">CSS:</span>
+                    <span class="skill-item-description">confident</span>
+                  </li>
+                  <li class="skill-item-techno">
+                    <span class="skill-item-name-techno">Java script:</span>
+                    <span class="skill-item-description">basic</span>
+                  </li>
+                  <li class="skill-item-techno">
+                    <span class="skill-item-name-techno">GIT:</span>
+                    <span class="skill-item-description">average</span>
+                  </li>
+                  <li class="skill-item-techno">
+                    <span class="skill-item-name-techno">Dev tools:</span>
+                    <span class="skill-item-description">average</span>
+                  </li>
+                </ul>
+              </li>
+              <li class="skill-item">
+                <span class="skill-item-name">Soft skills:</span>
+                <span class="skill-item-description">adaptability, communication, creative thinking, critical thinking, positivity, flexibility</span>
+              </li>
+            </ul>
+          </div>
+        </section>
+        <section class="example">
+          <h3>Examle of my code</h3>
+          <p>This is my solution of kata <a href="https://www.codewars.com/kata/551dc350bf4e526099000ae5">Dubstep</a> on CodeWars:</p>
+          <div class="dubstep-code">
+            <pre>
+              <code>
+                function songDecoder(song){
+                  let original = song.replace(/WUB/g, ' ').trim();
+                  original = original.replace(/ +/g, ' ');
+                  return original;
+                }
+              </code>
+            </pre>
+          </div>  
+        </section>
+      </main>
+    </div>
+  </div>
+  <div class="container">
+    <footer>
+      <div class="links">
+        <div class="git">
+          <a class="git-link" href="https://github.com/VincentWild69">
+            <p>My Github </p>
+            <img class="git-footer-icon" src="https://icons-for-free.com/iconfiles/png/512/git+github+hosting+internet+used+for+code+version+control+icon-1320194988409492468.png" alt="git_icon">
+          </a>
+        </div>
+        <div class="rss">
+          <a class="rss-link" href="https://rs.school/js/">
+            <p>Develope with </p>
+            <img class="rss-footer-icon" src="https://rs.school/images/rs_school_js.svg" alt="rss_icon">
+          </a>
+        </div>
+      </div>
+      <div class="year">
+        2021
+      </div>
+    </footer>
+  </div>
+</body>
+</html>
