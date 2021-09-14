@@ -19,7 +19,6 @@ const whosOnline = (friends) => {
   friends.map(e => e.status === 'online' && e.lastActivity < 11 ? online.push(e.username) :
               e.status === 'offline' ? offline.push(e.username) : away.push(e.username));
               
-  
   if (online.length > 0 && offline.length > 0 && away.length > 0) return {online, offline, away};
   if (online.length > 0 && offline.length > 0) return {online, offline};
   if (online.length > 0 && away.length > 0) return {online, away};
@@ -31,4 +30,4 @@ const whosOnline = (friends) => {
 
 **English proficiency :** A2
 
->Life is what happens to you while you're busy making other plans (John Lennon)
+>Life is what happens to you while you're busy making other plans _(John Lennon)_
