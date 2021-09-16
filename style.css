@@ -5,20 +5,25 @@
     box-sizing: border-box;
 }
 
+:root {
+  --main-color: #f8b47d;
+}
+
 html {
   font-family: 'Work Sans', sans-serif;
   font-size: 62.5%;
+  scroll-behavior: smooth;
 }
 
 @media screen and (max-width: 767px) {
   html {
-      font-size: 50%;
+      font-size: 56.25%;
   }
 }
 
 body {
   margin: 0;
-  background-color: #ffedcb;
+  background-color: #fff8ec;
   font-size: 1.6rem;
 }
 
@@ -28,6 +33,11 @@ h1, h2, h3, h4, p {
 
 input, button, textarea, select {
   font: inherit;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
 }
 
 li {
@@ -50,30 +60,138 @@ img {
 /*Default styles end*/
 
 .container {
-  width: 1366px;
+  width: calc(100% - 40px);
+  max-width: 1366px;
   margin: 0 auto;
 }
 
-@media screen and (max-width:1500px) {
-  .container {
-      width: 1240px;
-  }
+.header-container {
+  margin: 5px auto;
+  padding: 10px;
+  background-color: #fcda84;
 }
 
-@media screen and (max-width: 1340px) {
-  .container {
-      width: 1100px;
-  }
+.menu__list {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  max-width: 700px;
+  margin: 0 auto;
 }
 
-@media screen and (max-width: 1199px) {
-  .container {
+.menu__link {
+  color: #000;
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+
+/****/
+.burger {
+  display: none;
+  cursor: pointer;
+  position: relative;
+  width: 30px;
+  height: 20px;
+}
+
+.burger:before,
+.burger:after {
+    content: '';
+    position: absolute;
+    background-color: #fff;
     width: 100%;
-  }
+    height: 2px;
+    left: 0;
+    transition: all 0.4s ease;
 }
 
-/*HEADER START*/
-header {
+.burger:before {
+    top: 0;
+}
+
+.burger:after {
+    bottom: 0;
+}
+
+.burger__span {
+    position: absolute;
+    background-color: #fff;
+    width: 100%;
+    height: 2px;
+    top: 9px;
+    transition: all 0.4s ease;
+}
+
+.burger.active .burger__span{
+    transform: scale(0);
+    transition: all 0.4s ease;
+}
+
+.burger.active:before {
+    transform: rotate(45deg);
+    top: 9px;
+    transition: all 0.4s ease;
+}
+
+.burger.active:after {
+    transform: rotate(-45deg);
+    bottom: 9px;
+    transition: all 0.4s ease;
+}
+
+
+.container-main {
+  display: flex;
+}
+
+.sec-padding {
+  padding: 15px 25px;
+}
+
+.left-section {
+  width: 30%;
+  background-color: #68625c;
+}
+
+.right-section {
+  width: 70%;
+  background-color: #fcedce;
+}
+
+.introduce-block {
+  padding: 25px 25px;
+  background-color: #f8b47d;
+  text-align: center;
+}
+
+.main-photo {
+  margin: 0 auto;
+  width: 200px;
+  max-width: 100%;
+  /* border: 1px solid #7a7a79; */
+  border-radius: 2px;
+}
+
+.contact-block {
+  color: #ffe8b8;
+}
+
+.contacts__link {
+  color: #fff;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* header {
   display: flex;
   align-items: center;
   justify-content: space-around;
@@ -132,7 +250,6 @@ h1::after {
   border-radius: 2%;
   border: solid 5px #e4a144;
 }
-/*HEADER END*/
 
 .main-block {
   margin: 0 1rem 1rem 1rem;
@@ -140,11 +257,10 @@ h1::after {
   justify-content: space-between;
 }
 
-/*ASIDE START*/
 aside {
   width: 29%;
   height: 100%;
-  background-color: rgb(248, 180, 125);
+  background-color: #f8b47d;
 }
 
 main {
@@ -217,9 +333,7 @@ aside h2::after {
 .edu-margin {
   margin-bottom: 0.3rem;
 }
-/*ASIDE END*/
 
-/*MAIN BLOCK START*/
 main section {
   margin: 0 1rem 3rem 1rem;
 }
@@ -297,9 +411,7 @@ h3 {
 .example code {
   font-size: 1.4rem;
 }
-/*MAIN BLOCK END*/
 
-/*FOOTER START*/
 footer {
   margin: 0 1rem 1rem 1rem;
   background-color: #f0e9d6;
@@ -369,4 +481,9 @@ footer {
   font-size: 1.5rem;
   font-weight: 500;
 }
-/*FOOTER END*/
+
+.contact-item::before {
+  color: #2ca35e;
+} */
+
+
