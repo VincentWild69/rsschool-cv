@@ -15,15 +15,9 @@ html {
   scroll-behavior: smooth;
 }
 
-@media screen and (max-width: 767px) {
-  html {
-      font-size: 56.25%;
-  }
-}
-
 body {
   margin: 0;
-  background-color: #fff8ec;
+  background-color: #fffaf1;
   font-size: 1.6rem;
 }
 
@@ -79,11 +73,33 @@ img {
   margin: 0 auto;
 }
 
+.menu__item {
+  position: relative;
+}
+
+.menu__item:after {
+  content: '';
+  position: absolute;
+  top: 90%;
+  left: 0%;
+  width: 0%;
+  height: 2px;
+  background-color: #000;
+  transition: 0.4s ease;
+}
+
+.menu__item:hover.menu__item:after {
+  width: 100%;
+  transition: 0.4s ease;
+}
+
 .menu__link {
   color: #000;
   font-size: 2rem;
   font-weight: 600;
+  position: relative;
 }
+
 
 
 /****/
@@ -167,23 +183,65 @@ img {
 
 .main-photo {
   margin: 0 auto;
-  width: 200px;
+  width: 240px;
   max-width: 100%;
-  /* border: 1px solid #7a7a79; */
   border-radius: 2px;
 }
 
+h1 {
+  position: relative;
+  font-size: 3.5rem;
+  font-weight: 600;
+  padding: 25px 0 15px 0;
+}
+
+h1:after {
+  content: '';
+  position: absolute;
+  top: 92%;
+  left: calc(50% - 25px);
+  width: 55px;
+  height: 5px;
+  background-color: #000;
+}
+
+h2 {
+  font-size: 2.2rem;
+  font-weight: 600;
+  padding-top: 5px;
+}
+
 .contact-block {
+  margin-top: 10px;
   color: #ffe8b8;
 }
 
 .contacts__link {
   color: #fff;
+  transition: 0.3s ease;
 }
 
+.contacts__link:hover {
+  color: #f8b47d;
+  transition: 0.3s ease;
+}
 
+h3 {
+  font-size: 2.5rem;
+  font-weight: 600;
+  padding-bottom: 5px;
+  margin: 5px 0 10px 0;
+  border-bottom: 1px solid #f8b47d;
+}
 
+.contacts__item {
+  font-size: 2rem;
+  padding: 10px 0;
+}
 
+.contacts__item i {
+  margin-right: 8px;
+}
 
 
 
