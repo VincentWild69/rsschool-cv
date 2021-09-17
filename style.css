@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap');
+
 /*Default styles begin*/
 *, 
 *::before, 
@@ -10,7 +12,7 @@
 }
 
 html {
-  font-family: 'Work Sans', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-size: 62.5%;
   scroll-behavior: smooth;
 }
@@ -54,13 +56,13 @@ img {
 /*Default styles end*/
 
 .container {
-  width: calc(100% - 40px);
+  /* width: calc(100% - 40px); */
+  width: 100%;
   max-width: 1366px;
   margin: 0 auto;
 }
 
 .header-container {
-  margin: 5px auto;
   padding: 10px;
   background-color: #fcda84;
 }
@@ -77,7 +79,14 @@ img {
   position: relative;
 }
 
-.menu__item:after {
+.menu__link {
+  color: #000;
+  font-size: 2rem;
+  font-weight: 600;
+  position: relative;
+}
+
+.menu__link:after {
   content: '';
   position: absolute;
   top: 90%;
@@ -88,36 +97,72 @@ img {
   transition: 0.4s ease;
 }
 
-.menu__item:hover.menu__item:after {
+.menu__item:hover .menu__link:after {
   width: 100%;
   transition: 0.4s ease;
 }
 
-.menu__link {
-  color: #000;
-  font-size: 2rem;
-  font-weight: 600;
-  position: relative;
+@media screen and (max-width: 900px) {
+  main {
+    padding-top: 35px;
+  }
+  .header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10;
+  }
+  .header-container {
+    padding: 5px 10px;
+  }
+  .header__menu {
+    position: fixed;
+    top: 0;
+    left: -100%;
+    height: 100%;
+    width: 180px;
+    z-index: 10;
+    transition: all 0.3s ease;
+  }
+  .header__menu.active {
+    left: 0;
+    transition: all 0.3s ease;
+  }
+  .menu__list {
+    display: block;
+    padding: 100px 20px 20px 35px;
+    background-color: rgba(252, 218, 132, 0.952);
+    height: 100%;
+  }
+  .menu__item {
+    padding: 10px 0;
+  }
 }
-
-
 
 /****/
 .burger {
   display: none;
   cursor: pointer;
   position: relative;
-  width: 30px;
-  height: 20px;
+  width: 35px;
+  height: 25px;
+  z-index: 15;
+}
+
+@media screen and (max-width: 900px) {
+  .burger {
+    display: block;
+  }
 }
 
 .burger:before,
 .burger:after {
     content: '';
     position: absolute;
-    background-color: #fff;
+    background-color: #000000;
     width: 100%;
-    height: 2px;
+    height: 3px;
     left: 0;
     transition: all 0.4s ease;
 }
@@ -132,10 +177,10 @@ img {
 
 .burger__span {
     position: absolute;
-    background-color: #fff;
+    background-color: #000000;
     width: 100%;
-    height: 2px;
-    top: 9px;
+    height: 3px;
+    top: 11px;
     transition: all 0.4s ease;
 }
 
@@ -146,19 +191,25 @@ img {
 
 .burger.active:before {
     transform: rotate(45deg);
-    top: 9px;
+    top: 11px;
     transition: all 0.4s ease;
 }
 
 .burger.active:after {
     transform: rotate(-45deg);
-    bottom: 9px;
+    bottom: 11px;
     transition: all 0.4s ease;
 }
 
 
 .container-main {
   display: flex;
+}
+
+@media screen and (max-width: 900px) {
+  .container-main {
+    flex-direction: column;
+  }
 }
 
 .sec-padding {
@@ -173,6 +224,18 @@ img {
 .right-section {
   width: 70%;
   background-color: #fcedce;
+  padding-top: 40px;
+}
+
+@media screen and (max-width: 900px) {
+  .left-section {
+    width: 100%;
+  }
+  
+  .right-section {
+    width: 100%;
+    padding-top: 10px;
+  }
 }
 
 .introduce-block {
@@ -235,7 +298,7 @@ h3 {
 }
 
 .contacts__item {
-  font-size: 2rem;
+  font-size: 1.8rem;
   padding: 10px 0;
 }
 
@@ -243,11 +306,63 @@ h3 {
   margin-right: 8px;
 }
 
+.skills__item {
+  list-style: circle inside;
+  margin: 10px 0;
+}
+
+.skills__name {
+  font-weight: 700;
+  text-decoration: underline #ff9900;
+}
+
+.techno-skills__list {
+  margin-left: 25px;
+}
+
+.techno-skills__item {
+  list-style: square inside;
+  margin: 4px 0;
+  font-style: italic;
+  font-weight: 600;
+}
+
+.techno-skills__description {
+  font-style: normal;
+  font-weight: 400;
+}
 
 
 
 
 
+
+
+
+
+
+
+
+
+
+
+.hljs, .hljs-subst {
+  color: #7acc58;
+}
+
+.hljs {
+  background: #2f2f2f;
+}
+
+.hljs-string, .hljs-number {
+  color: #d05a5a;
+}
+
+pre {
+  white-space: pre-line;
+  border-radius: 1%;
+  max-width: 70rem;
+}
 
 /* header {
   display: flex;
