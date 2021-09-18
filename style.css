@@ -7,10 +7,6 @@
     box-sizing: border-box;
 }
 
-:root {
-  --main-color: #f8b47d;
-}
-
 html {
   font-family: 'Open Sans', sans-serif;
   font-size: 62.5%;
@@ -25,10 +21,6 @@ body {
 
 h1, h2, h3, h4, p {
   margin: 0;
-}
-
-input, button, textarea, select {
-  font: inherit;
 }
 
 ul {
@@ -437,13 +429,6 @@ h3 i {
   font-style: italic;
 
 }
-
-
-
-
-
-
-
 
 .hljs, .hljs-subst {
   color: #7acc58;
