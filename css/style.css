@@ -430,18 +430,6 @@ h3 i {
 
 }
 
-.hljs, .hljs-subst {
-  color: #7acc58;
-}
-
-.hljs {
-  background: #2f2f2f;
-}
-
-.hljs-string, .hljs-number {
-  color: #d05a5a;
-}
-
 pre {
   white-space: pre-line;
   border-radius: 1%;
