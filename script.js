@@ -25,4 +25,4 @@ burger.addEventListener('click', () => {
 
 
 
-console.log('%c> Burger menu on 900px width breakpoint', 'color: green')
+console.log('%c> Responsive, burger menu on 900px width breakpoint', 'color: green')
