@@ -368,6 +368,7 @@ h3 i {
 }
 
 .work {
+  flex: 0 1 25%;
   margin: 0 5px;
   padding: 10px 10px;
   transition: 0.3s ease;
